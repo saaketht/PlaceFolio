@@ -32,7 +32,6 @@ build/
 out/
 
 # Ignore Gatsby build output
-public/
 
 # Ignore Webpack build output
 dist/
