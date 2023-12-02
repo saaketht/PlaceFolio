@@ -25,13 +25,8 @@ yarn-error.log*
 # Ignore Jest coverage reports
 coverage/
 
-# Ignore React build output
-build/
-
 # Ignore Next.js build output
 out/
-
-# Ignore Gatsby build output
 
 # Ignore Webpack build output
 dist/
