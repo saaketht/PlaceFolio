@@ -1,6 +1,3 @@
-# Ignore build directories
-/build
-
 # Ignore .env files
 .env
 
