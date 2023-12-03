@@ -105,7 +105,7 @@ app.post('/account/verify', async (req, res) => {
   //SENDGRID EMAIL
   const msg = {
     to: email, // Change to your recipient
-    from: "ry097313@ucf.edu", // Change to your verified sender
+    from: "placefolio@gmail.com", // Change to your verified sender
     subject: "Email Verification Code",
     text:
       "Please use the following code to verify your email: " +
@@ -158,7 +158,7 @@ app.post('/account/passwordReset', async (req, res) => {
     //SENDGRID EMAIL
     const msg = {
       to: email, // Change to your recipient
-      from: "ry097313@ucf.edu", // Change to your verified sender
+      from: "placefolio@gmail.com", // Change to your verified sender
       subject: "Password Reset Code",
       text:
         "Please use the following code to reset your password: " +

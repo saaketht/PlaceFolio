@@ -1,12 +1,7 @@
 exports.buildPath =
 function buildPath(route)
 {
-    if (process.env.NODE_ENV === 'production')
-    {
-    return 'http://18.209.131.126:5000/' + route;  //RE PLACE WITH ACTUAL ROUTE
-    }
-    else
-    {
-    return 'http://localhost:5000/' + route;
-    }
+
+    return 'https://poos-group16-largeproject-a2c1e4b41bdb.herokuapp.com/' + route;  //RE PLACE WITH ACTUAL ROUTE
+
 }

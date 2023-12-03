@@ -5,6 +5,7 @@ const account = require("./routes/account.js");
 const pins = require("./routes/pins.js");
 const client = require('./config/db.js');
 const dotenv = require('dotenv');
+const path = require('path')
 
 // assign port
 const PORT = process.env.PORT || 5000;
@@ -69,11 +70,14 @@ async function run() {
 //  set the route to the index.html file and serve it
 if (process.env.NODE_ENV === 'production')
 {
+
   // Set static folder
   app.use(express.static('frontend/build'));
   // Serve index.html file if it exists on the server (production)
   app.get('*', (req, res) =>
   {
+    console.log('__dirname:', __dirname);
+    console.log('Resolved Path:', path.resolve(__dirname, 'frontend', 'build', 'index.html'));
     res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
   });
 }
