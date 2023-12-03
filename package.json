@@ -4,7 +4,7 @@
   "description": "My project description",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js && npm run --prefix frontend",
+    "start": "npm install && node server.js && npm run --prefix frontend start",
     "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
